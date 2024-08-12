@@ -35,3 +35,20 @@
 // } else {
 //     document.write("The number is zero");
 // }
+
+
+// let fruit = "apple";
+
+// switch (fruit) {
+//     case "apple":
+//         document.write("The fruit is apple");
+//         break;
+//     case "banana":
+//         document.write("The fruit is banana");
+//         break;
+//     default:
+//         document.write("The fruit is neither apple nor banana");
+// }
+
+
+
