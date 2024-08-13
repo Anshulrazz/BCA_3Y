@@ -37,18 +37,25 @@
 // }
 
 
-// let fruit = "apple";
+// let fruit = prompt("Enter a fruit");
 
 // switch (fruit) {
 //     case "apple":
-//         document.write("The fruit is apple");
+//         document.write(`You choose : ${fruit}`);
 //         break;
 //     case "banana":
-//         document.write("The fruit is banana");
+//         document.write(`You choose : ${fruit}`);
 //         break;
 //     default:
-//         document.write("The fruit is neither apple nor banana");
+//         document.write(`You choose unkonwn `);
 // }
+
+
+
+
+
+
+
 
 
 
