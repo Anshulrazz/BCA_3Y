@@ -37,25 +37,18 @@
 // }
 
 
-// let fruit = prompt("Enter a fruit");
+let fruit = prompt("Enter a fruit");
 
-// switch (fruit) {
-//     case "apple":
-//         document.write(`You choose : ${fruit}`);
-//         break;
-//     case "banana":
-//         document.write(`You choose : ${fruit}`);
-//         break;
-//     default:
-//         document.write(`You choose unkonwn `);
-// }
-
-
-
-
-
-
-
+switch (fruit) {
+    case "apple":
+        document.write(`You choose : ${fruit}`);
+        break;
+    case "banana":
+        document.write(`You choose : ${fruit}`);
+        break;
+    default:
+        document.write(`You choose unkonwn `);
+}
 
 
 
