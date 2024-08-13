@@ -1,51 +1,62 @@
-/* Basic reset */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    font-family: "Yatra One", system-ui;
+}
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
     margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(#f87009, #04e613);
 }
 
-.cont {
-    width: 300px;
-    margin: 100px auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    background-color: #fff;
-    text-align: center;
+.calculator {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
-input[type="number"] {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 2px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 16px;
-}
-
-button {
-    width: 80%;
-    padding: 10px;
-    margin: 5px 0;
-    border: none;
-    border-radius: 4px;
-    background-color: #007BFF;
+.display {
+    background-color: #2222224e;
     color: #fff;
-    font-size: 16px;
+    font-size: 2em;
+    padding: 0.5em;
+    text-align: right;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+.btn {
+    background-color: #544e4e21;
+    border: 1px solid #ccc;
+    font-size: 1.5em;
+    padding: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #0056b3;
+.btn:hover {
+    background-color: #f0f0f0;
 }
 
-#result {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 20px;
-    color: #333;
+#equals {
+    background-color: #4CAF50;
+    color: #fff;
+    grid-column: span 2;
+}
+
+#equals:hover {
+    background-color: #45a049;
+}
+
+#zero {
+    grid-column: span 2;
 }

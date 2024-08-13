@@ -1,25 +1,21 @@
-let a = document.getElementById("num1");
-let b = document.getElementById("num2");
-let result = document.getElementById("result");
-
-function greet() {
-    document.write("Happy Indpendence Day"); 
-}
-greet();
-function add() {
-    result.innerHTML = parseInt(a.value) + parseInt(b.value);
+function appendToDisplay(value) {
+    const display = document.getElementById('display');
+    if (display.innerText === '0') {
+        display.innerText = value;
+    } else {
+        display.innerText += value;
+    }
 }
 
-function sub() {
-    result.innerHTML = parseInt(a.value) - parseInt(b.value);
+function clearDisplay() {
+    document.getElementById('display').innerText = '0';
 }
 
-function mul() {
-    result.innerHTML = parseInt(a.value) * parseInt(b.value);
+function calculate() {
+    const display = document.getElementById('display');
+    try {
+        display.innerText = eval(display.innerText) || '0';
+    } catch (e) {
+        display.innerText = 'Error';
+    }
 }
-
-function div() {
-    result.innerHTML = parseInt(a.value) / parseInt(b.value);
-}
-
-console.log(result);
